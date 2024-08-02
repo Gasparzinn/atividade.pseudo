@@ -1,0 +1,70 @@
+body {
+  width: 100%;
+}
+
+div {
+  width: 100%;
+  border: solid;
+  height: 70px;
+}
+
+#first_line p::first-line {
+  color: #ff0000;
+}
+
+#first_letter p::first-letter {
+  color: #ff0000;
+  font-size: larger;
+}
+
+#before p::before {
+  content: url(download.jpg);
+}
+
+#after p::after {
+  content: url(download.jpg);
+}
+
+#marker ::marker {
+  color: red;
+  font-size: 23px;
+}
+#marker {
+  display: flex;
+  height: 100px;
+}
+
+#selection p::selection {
+  color: red;
+  background: yellow;
+}
+
+#hover:hover {
+  background-color: #ff0000;
+}
+
+#hoverp p {
+  display: none;
+  background-color: yellow;
+  padding: 20px;
+}
+
+#hoverp div p {
+  display: block;
+}
+
+#first_child :first-child {
+  color: blue;
+}
+
+#first_child_i p i:first-child {
+  color: blue;
+}
+
+#first_child_i_2 p:first-child i {
+  color: blue;
+}
+
+#lang q:lang(no) {
+  quotes: "~""~";
+}
